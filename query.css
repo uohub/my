@@ -1,12 +1,15 @@
 /* desktop screen range (12000-500) start */
 :root {
 
-  --background-color: #091d06;
-  --text-color: #eafbe8;
-  --primary-color: #98e98e;
-  --box-shadow-color: #7b1982;
-  --special-font-color: #d62d36;
-  --border-color: #98e98e;
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: 1rem;
+  --inner-box-color: rgb(15, 54, 15);
+  --background-color: #fdfdfd;
+  --text-color: #150c13;
+  --primary-color: #a862a0;
+  --box-shadow-color: #cda4b8;
+  --special-font-color: #bc8698;
+  --border-color: #bc8698;
   --head-font-weight: 700;
   --light-font-weight: 550;
   --box-color: #9be9900d;
@@ -264,6 +267,7 @@
 
 
   .main-hero {
+    padding: 2%;
     grid-template-columns: 1fr;
     grid-template-areas:
       "image"
@@ -379,9 +383,10 @@
 }
 
 @media (max-width: 500px) {
-  #why-column{
+  #why-column {
     padding: 10px 2%;
   }
+
   .why-column-text h2 {
     font-size: var(--font-size-h2);
   }
@@ -439,12 +444,14 @@
 }
 
 @media (max-width: 500px) {
-  #my-projects{
+  #my-projects {
     padding: 10px 2%;
   }
-  .project{
+
+  .project {
     margin: 10px 10px;
   }
+
   .project-text h2 {
     font-size: var(--font-size-h2);
   }
@@ -487,9 +494,10 @@
 }
 
 @media (max-width: 500px) {
-  #case-studies{
+  #case-studies {
     padding: 10px 2%;
   }
+
   .case-text {
     padding: 20px 10px;
   }
@@ -611,6 +619,7 @@
   #testimonials {
     padding: 10px 2%;
   }
+
   #faq {
     padding: 10px 4%;
   }

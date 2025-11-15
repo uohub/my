@@ -26,12 +26,12 @@
     --body-font: "Montserrat", sans-serif;
     --normal-font-size: 1rem;
     --inner-box-color: rgb(15, 54, 15);
-    --background-color: #091d06;
-    --text-color: #eafbe8;
-    --primary-color: #98e98e;
-    --box-shadow-color: #7b1982;
-    --special-font-color: #d62d36;
-    --border-color: #98e98e;
+    --background-color: #fdd2fd;
+    --text-color: #150c13;
+    --primary-color: #a862a0;
+    --box-shadow-color: #cda4b8;
+    --special-font-color:#bc8698;
+    --border-color: #bc8698;
     --head-font-weight: 700;
     --light-font-weight: 550;
     --box-color: #9be9900d;
@@ -165,19 +165,17 @@ a {
 }
 
 .button {
-
     transition: .4s;
     position: relative;
 }
 
-
 .button__content {
     position: relative;
-    background: var(--gradient-color);
+    background: var(--box-shadow-color);
     padding: 10px 22px;
     border-radius: 4rem;
-    border: 3px solid var(--black-color);
-    color: var(--black-color);
+    border: 3px solid #610249;
+    color: var(--special-font-color);
     display: flex;
     align-items: center;
     column-gap: .5rem;
@@ -298,7 +296,7 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    background: var(--gradient-color);
+    background: var(--box-shadow-color);
     padding: 1.25rem 3rem;
     border-radius: 4rem;
     border: 3px solid var(--black-color);
@@ -474,7 +472,7 @@ main {
 .main-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px 6%;
+    padding: 10px 6% 6% 70px;
     min-height: 280px;
     align-items: stretch;
     gap: 20px;
@@ -508,12 +506,7 @@ main {
 }
 
 .hero-ps {
-    background: rgba(255, 255, 255, 0.1);
-    /* transparent background overlay */
-    backdrop-filter: blur(30px);
-    /* main blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
+    background-color:#f4b5f8;
     padding: 10px;
     border-radius: 12px;
     /* optional rounded corners */
@@ -569,7 +562,7 @@ main {
     margin-top: 2rem;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     animation: animate 5s ease-in-out infinite;
-    box-shadow: 0 0px 18px 18px rgba(250, 178, 237, 0.5);
+    box-shadow: 0 0px 18px 18px rgba(240, 115, 217, 0.5);
     transition: all 1s ease-in-out;
     margin-left: 70px;
 }
@@ -596,22 +589,23 @@ main {
     padding: 22px 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #ffffff;
+    color: #2a092c;
     font-size: 1.2rem;
     font-weight: bold;
     transition: .5s;
+    background-color: var(--border-color);
     overflow: hidden;
     margin-top: 18px;
 }
 
 
 .hero-button a:hover {
-    background-color: rgb(255, 170, 228);
-    color: var(--background-color);
-    box-shadow: 0 0 5px #f8f5f2,
-        0 0 25px #f8f3fb,
-        0 0 50px #f8f3fb,
-        0 0 200px #f8f3fb;
+    background-color: #75376b;
+    color: #f7cfe0;
+    box-shadow: 0 0 5px #ff0379,
+        0 0 25px rgb(255, 170, 228),
+        0 0 50px rgb(255, 170, 228),
+        0 0 200px rgb(255, 151, 222);
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
@@ -625,7 +619,7 @@ main {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #f8f3fb);
+    background: linear-gradient(90deg, transparent, #2a092c);
     animation: animate1 1s infinite;
 }
 
@@ -644,7 +638,7 @@ main {
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #f8f3fb);
+    background: linear-gradient(180deg, transparent, #2a092c);
     animation: animate2 1s infinite;
     animation-delay: .25s;
 }
@@ -664,7 +658,7 @@ main {
     right: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(270deg, transparent, #f8f3fb);
+    background: linear-gradient(270deg, transparent, #2a092c);
     animation: animate3 1s infinite;
     animation-delay: .5s;
 }
@@ -684,7 +678,7 @@ main {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #f8f3fb);
+    background: linear-gradient(360deg, transparent, #2a092c);
     animation: animate4 1s infinite;
     animation-delay: .75s;
 }
@@ -736,7 +730,7 @@ main {
 
 /* ABOUT TEXT BOX */
 .about-text-up {
-    background: linear-gradient(180deg, #000000, #75376b, #e95fd7);
+    background: linear-gradient(180deg, #494949, #994ca0, #de5fe9);
     border-radius: 12px;
     flex: 1;
     min-width: 250px;
@@ -755,7 +749,7 @@ main {
 .about-text-up h5 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-regular);
-    color: #ff0379;
+    color: #d47eca;
     margin: 0 0 20px 0;
     animation: slideBottom 1.7s ease;
     text-align: center;
@@ -890,7 +884,7 @@ main {
 .section-card {
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 0 200px #e629f3;
+    box-shadow: 0 0 200px #9829f3;
     background: var(--box-color);
     transition: all .5s ease;
     margin-bottom: 5px;
@@ -902,7 +896,7 @@ main {
 }
 
 .section-card i {
-    color: #ffffff;
+    color: #610249;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -917,7 +911,7 @@ main {
     align-items: center;
     animation: slideBottom 1.7s ease;
     font-size: var(--font-size-h3);
-    color: #f377fc;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -935,12 +929,6 @@ main {
 #my-projects {
     padding: 10px 8%;
     margin-top: 130px;
-    background: rgba(255, 255, 255, 0.1);
-    /* transparent background overlay */
-    backdrop-filter: blur(10px);
-    /* main blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
 
 }
 
@@ -950,6 +938,7 @@ main {
     padding: 40px;
     transition: background .5s, transform .5s;
     border-top: 4px solid #ee94df;
+    background-color: #b786bc;
 }
 
 .project-text h2 {
@@ -973,7 +962,7 @@ main {
 }
 
 .project-p {
-    border: 4px solid #ee94df;
+    border: 4px solid #6b2860;
     color: #f3f0f1;
     border-radius: 7px;
     font-weight: var(--font-weight-regular);
@@ -1017,12 +1006,6 @@ main {
 
 /* <!-- ------------Case Study ------------> */
 #case-studies {
-    background: rgba(255, 255, 255, 0.1);
-    /* transparent background overlay */
-    backdrop-filter: blur(10px);
-    /* main blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     padding: 10px 8%;
 }
 
@@ -1040,13 +1023,13 @@ main {
 
 .case-text h3 {
     padding: 10px 0px;
-    color: #ffffff;
+    color: #202020;
     animation: slideRight 1.3s ease;
 }
 
 .case-text h4 {
-    color: #fdd2f6;
-    border-bottom: 5px solid #ee94df;
+    color: #fca9ee;
+    border-bottom: 5px solid #9829f3;
     padding: 10px 0px;
     font-size: var(--font-size-large);
 }
@@ -1141,14 +1124,14 @@ main {
     width: 100%;
     padding: 20px;
     border-radius: 12px;
-    background: linear-gradient(90deg, #000000, #2a092c, #000000);
-
+    box-shadow: 0px 0px 100px 60px #a862a0;
+    background: linear-gradient(90deg, #202020, #ee94df, #202020);
 }
 
 .test-card {
     padding: 24px;
     border-radius: 10px;
-    border-left: 4px solid #c70697;
+    border-left: 4px solid #75376b;
     background: var(--box-color);
     animation: slideLeft 1.8s ease;
 }
@@ -1191,7 +1174,7 @@ blockquote p {
     margin-top: 7px;
     font-weight: var(--font-weight-regular);
     line-height: 1.6;
-    color: #f8d7fa;
+    color: #ffffff;
 }
 
 .test-card i {
@@ -1202,7 +1185,7 @@ blockquote p {
 
 /* <!-- ------------FAQS ------------> */
 #faq {
-    padding: 10px 19%;
+    padding: 10px 19% 9% 19%;
 }
 
 .faq-heading {
@@ -1219,8 +1202,8 @@ blockquote p {
 }
 
 .according {
-    background: linear-gradient(90deg, #000000, #2a092c, #000000);
-    color: #9c0576;
+    background: linear-gradient(90deg, #4d4c4c, #9b5c9e, #4d4b4b);
+    color: #fff;
     cursor: pointer;
     font-size: var(--font-size-lg);
     width: 100%;
@@ -1230,7 +1213,7 @@ blockquote p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-light);
     border-radius: 12px;
 }
 
@@ -1247,7 +1230,7 @@ blockquote p {
 
 .panel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: #2a092c;
+    background-color: #a375a5;
     overflow: hidden;
     display: none;
     transition: .4s ease;
@@ -1279,7 +1262,7 @@ blockquote p {
 /* FINAL CTA SECTION BUDDY */
 
 #final-cta {
-    padding: 8px 14%;
+    padding: 8% 14% 0px 14%;
 }
 
 #final-cta h3 {
@@ -1302,7 +1285,7 @@ blockquote p {
 .hero-f-cta a {
     display: inline-block;
     padding: 24px 78px;
-    background-color: var(--text-color);
+    background-color: #cda4b8;
     text-decoration: none;
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-bold);
@@ -1320,12 +1303,7 @@ blockquote p {
     /* Low height */
     color: #fff;
     display: flex;
-    background: rgba(255, 255, 255, 0.1);
-    /* transparent background overlay */
-    backdrop-filter: blur(10px);
-    /* main blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
+    background-color: #978497;
     align-items: center;
     overflow-y: hidden;
 }
